@@ -1,0 +1,6 @@
+version: "3"
+services:
+  run:
+    image: 34.88.187.2:8123/myweb:latest
+    ports:
+      - 8090:8080
