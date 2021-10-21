@@ -27,7 +27,7 @@ pipeline {
             steps {
                     sh 'ssh-keyscan -H 34.88.176.33 >> ~/.ssh/known_hosts'
                     sh ''' ssh root@34.88.176.33 << EOF
-                      	sudo git clone https://github.com/odiora//jenkins-pipeline.git /home/jenkins-pipeline
+                      	git clone https://github.com/odiora//jenkins-pipeline.git /home/jenkins-pipeline
                       	cd /home/jenkins-pipeline
                       	docker-compose up -d EOF'''
             }
